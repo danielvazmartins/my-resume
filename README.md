@@ -2,6 +2,9 @@
 
 Currículo desenvolvido em Angular para aplicar os conhecimentos com algo real e servir como parte de um portifólio
 
+## 🌎 Acesse a versão online
+https://danielvazmartins.com.br/
+
 ## Instalação
 ```bash
 # Rodar o projeto localmente
