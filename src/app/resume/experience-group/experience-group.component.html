@@ -1,0 +1,15 @@
+<div class="row-flex" *ngIf="show === true">
+  <div class="col left">
+    <span>{{dateFrom}}</span>
+    <ng-container *ngIf="dateTo">
+      <span>até</span>
+      <span>{{dateTo}}</span>
+    </ng-container>
+  </div>
+  <div class="col right">
+      <label class="title">{{title}}</label>
+      <label class="sub-title">{{subTitle}}</label>
+      <span [innerHTML]="data"></span>
+      <span *ngFor="let line of dataLines" [innerHTML]="line"></span>
+  </div>
+</div>

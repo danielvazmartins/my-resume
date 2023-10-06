@@ -1,0 +1,50 @@
+<div class="style" [ngClass]="styleName" *ngIf="resume">
+    <div class="header">
+      <h1>{{resume.name}}</h1>
+      <p>{{resume.occupation}}</p>
+    </div>
+    <div class="box-resume">
+      <div class="sidebar">
+          <div class="perfil-img" *ngIf="resume.foto">
+            <img [src]="resume.foto">
+          </div>
+          <app-data-group *ngIf="resume.mobile || resume.email || resume.linkedIn || resume.github" title="Contato" [dataLines]="[resume.mobile, resume.mobile2, resume.email, resume.linkedIn, resume.github]"></app-data-group>
+          <app-data-group *ngIf="resume.address" title="Endereço" [dataLines]="resume.address"></app-data-group>
+          <app-data-group *ngIf="resume.dateOfBirth" title="Data de nascimento" [data]="resume.dateOfBirth"></app-data-group>
+          <div class="box-skills" *ngIf="resume.skills">
+              <h3>Qualificações</h3>
+              <app-data-group *ngFor="let skill of resume.skills" [title]="skill.type" [dataWords]="skill.skills"></app-data-group>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="row" *ngIf="resume.aboutMe">
+            <h3 class="sub-title">Sobre mim</h3>
+            <p>{{resume.aboutMe}}</p>
+          </div>
+          <div class="row" *ngIf="resume.professionalGoals">
+            <h3 class="sub-title">Objetivo Profissional</h3>
+            <p>{{resume.professionalGoals}}</p>
+          </div>
+          <div class="row-flex">
+            <div class="col">
+                <h3 class="sub-title" *ngIf="resume.academicQualifications">Formação Acadêmica</h3>
+                <app-course-group  *ngFor="let course of resume.academicQualifications" title="{{course.dateConclusion}} - {{course.institution}}" [data]="course.course"></app-course-group>
+                <h3 class="sub-title" *ngIf="resume.certifications">Certificações atuais</h3>
+                <app-course-group  *ngFor="let course of resume.certifications" title="{{course.dateConclusion}} - {{course.institution}}" [data]="course.course"></app-course-group>
+                <h3 class="sub-title" *ngIf="resume.certifications">Outras certificações</h3>
+                <app-course-group  *ngFor="let course of resume.othersCertifications" title="{{course.dateConclusion}} - {{course.institution}}" [data]="course.course" [show]="course.show"></app-course-group>
+                <h3 class="sub-title" *ngIf="resume.technicalQualifications">Formação Técnica</h3>
+                <app-course-group  *ngFor="let course of resume.technicalQualifications" title="{{course.dateConclusion}} - {{course.institution}}" [data]="course.course"></app-course-group>
+            </div>
+            <div class="col" *ngIf="resume.extraCourses">
+                <h3 class="sub-title">Formação Extra Curricular</h3>
+                <app-course-group  *ngFor="let course of resume.extraCourses" title="{{course.dateConclusion}} - {{course.institution}} ({{course.workload}})" [data]="course.course" [show]="course.show"></app-course-group>
+            </div>
+          </div>
+          <div class="row">
+              <h3 class="sub-title" *ngIf="resume.professionalExperience">Experiência Profissional</h3>
+              <app-experience-group *ngFor="let job of resume.professionalExperience" [dateFrom]="job.dateFrom" [dateTo]="job.dateTo" [title]="job.company" [subTitle]="job.position" [dataLines]="job.description" [show]="job.show"></app-experience-group>
+          </div>
+        </div>
+    </div>
+</div>

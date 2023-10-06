@@ -1,0 +1,80 @@
+// Cores
+$header-bg: #f48fb1;
+$header-font: #e91e63;
+$header-border: #880e4f;
+$subtitle-color: #880e4f;
+$text-color: #ec407a;
+
+.style.pink {
+    background: #f06292;
+
+    .header {
+        background: $header-bg;
+        color: $header-font;
+        border-bottom: 3px solid $header-border;
+    }
+
+    .box-resume {
+        .sidebar {
+            background: linear-gradient(#ad1457, #880e4f);
+
+            .perfil-img {
+                width: 130px;
+                height: 130px;
+                margin: auto;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                overflow: hidden;
+                box-shadow: -3px 3px 1px 1px $header-bg;
+    
+                img {
+                    width: 100%;
+                }
+            }
+
+            .box-skills {
+                background: #FFFFFF08;
+    
+                h3 {
+                    color: #f48fe2;
+                }
+            }
+        }
+    }
+
+    .main-content {
+        background: #fce4ec;
+        color: $text-color;
+
+        .sub-title {
+            color: $subtitle-color;
+            border-bottom: 1px solid $subtitle-color;
+        }
+
+        .row-flex {
+            .col {
+                &:nth-child(2) {
+                    border-left: 3px solid $subtitle-color;
+                }
+            }
+        }
+    }
+
+    ::ng-deep app-data-group {
+        label {
+            color: #f48fe2;
+        }
+    }
+
+    ::ng-deep app-course-group {
+        label {
+            color: $subtitle-color;
+        }
+    }
+
+    ::ng-deep app-experience-group {
+        label {
+            color: $subtitle-color;
+        }
+    }
+}

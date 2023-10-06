@@ -1,0 +1,6 @@
+<label>{{title}}</label>
+<span>{{data}}</span>
+<span *ngFor="let line of dataLines">{{line}}</span>
+<span>
+  <ng-container *ngFor="let word of dataWords; last as last">{{word}}<ng-container *ngIf="!last">, </ng-container></ng-container>
+</span>

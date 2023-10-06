@@ -1,0 +1,87 @@
+//*** BACKGROUND ***//
+$header-bg: #cfd8dc;
+$page-bg: #546e7a;
+$sidebar-bg: #90a4ae;
+$content-bg: #eceff1;
+$header-border: #455a64;
+
+//*** FONT COLOR ***//
+$header-font: #546e7a;
+$sidebar-title: #263238;
+//$sidebar-font-color:  
+
+$subtitle-color: #263238;
+$text-color: #424242;
+
+.style.gray {
+    background: $page-bg;
+
+    .header {
+        background: $header-bg;
+        color: $header-font;
+        border-bottom: 3px solid $header-border;
+    }
+
+    .box-resume {
+        .sidebar {
+            background: $sidebar-bg;
+
+            .perfil-img {
+                box-shadow: -3px 3px 1px 1px $header-bg;
+            }
+
+            .box-skills {
+                background: #FFFFFF08;
+    
+                h3 {
+                    color: $subtitle-color;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .main-content {
+        background: $content-bg;
+        color: $text-color;
+
+        .sub-title {
+            color: $subtitle-color;
+            border-bottom: 1px solid $subtitle-color;
+        }
+
+        .row-flex {
+            .col {
+                &:nth-child(2) {
+                    border-left: 3px solid $subtitle-color;
+                }
+            }
+        }
+    }
+
+    ::ng-deep app-data-group {
+        label {
+            color: $subtitle-color;
+            font-weight: bold;
+        }
+    }
+
+    ::ng-deep app-course-group {
+        label {
+            font-weight: bold;
+            color: $header-font;
+        }
+    }
+
+    ::ng-deep app-experience-group {
+        label {
+            color: $subtitle-color;
+    
+            &.sub-title {
+                font-weight: bold;
+                border-bottom: 1px solid #263238;
+                color: $header-font !important;
+            }
+        }
+    }
+}

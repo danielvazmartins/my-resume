@@ -1,0 +1,40 @@
+:host {
+    display: block;
+    margin-bottom: 10px;
+
+    .row-flex {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col {
+            padding: 10px;
+            align-self: center;
+
+            &.left {
+                text-align: center;
+            }
+
+            &.right {
+                flex: 1;
+                border-left: 1px solid #644B39;
+            }
+        }
+    }
+
+    label {
+        display: block;
+        color: #EF8A40;
+        
+        &.title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        &.sub-title {
+            margin-bottom: 5px;
+        }
+    }
+    span {
+        display: block;
+    }
+}

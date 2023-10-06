@@ -1,0 +1,19 @@
+:host {
+    display: block;
+    margin-bottom: 20px;
+
+    label {
+        display: block;
+        color: #EF8A40;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;                
+    }
+    span {
+        display: block;
+        color: #FFFFFF;
+        -webkit-font-smoothing: antialiased;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.9em;
+        margin-top: 4px;
+    }
+}
