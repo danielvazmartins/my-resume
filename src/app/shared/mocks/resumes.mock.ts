@@ -3,7 +3,7 @@ export const resumesMock = {
         {
             name: 'Daniel Vaz Villalobos Martins',
             foto: '/assets/foto-perfil.jpg',
-            occupation: 'Full Stack Sênior | NodeJs | Java | AngularJS | DevOps',
+            occupation: 'Full Stack Sênior | NodeJs | Java | ReactJs | Angular | DevOps',
             dateOfBirth: '17/08/1983',
             address: [
                 'Av. Vila Ema, 3793 ap 103C',
@@ -15,13 +15,13 @@ export const resumesMock = {
             github: 'github.com/danielvazmartins',
             skills: [{
                 type: 'Back-end',
-                skills: ['NodeJs (Express, NestJs)', 'Java']
+                skills: ['NodeJs (Express, NestJs)', 'Java', 'GO']
             }, {
                 type: 'Front-end',
-                skills: ['Angular', 'JavaScript', 'TypeScript', 'PWA', 'Bootstrap', 'Material Design', 'CSS', 'SASS']
+                skills: ['React', 'Angular', 'JavaScript', 'TypeScript', 'PWA', 'Bootstrap', 'Material Design', 'CSS', 'SASS']
             }, {
                 type: 'Database',
-                skills: ['Mysql', 'MongoDB', 'Elasticsearch', 'Sql Server', 'Postgree']
+                skills: ['Mysql', 'MongoDB', 'ElasticSearch', 'Sql Server', 'Postgree']
             }, {
                 type: 'Mobile',
                 skills: ['Android com Java', 'iOS com Objective-C']
@@ -30,7 +30,7 @@ export const resumesMock = {
                 skills: ['Administração de servidores Windows e Linux', 'Docker', 'Kubernets', 'Cloud (AWS e Azure), DevOps (Git, Jenkins, etc)']
             }, {
                 type: 'Design',
-                skills: ['Photoshop', 'Illustrator', 'Adobe XD']
+                skills: ['Photoshop', 'Illustrator', 'Adobe XD', 'Figma']
             }, {
                 type: 'Idiomas',
                 skills: ['Inglês Técnico Avançado']
@@ -208,6 +208,16 @@ export const resumesMock = {
             ],
             professionalExperience: [
                 {
+                    dateFrom: '06/11/2023',
+                    dateTo: '18/03/2024',
+                    company: 'Finanzero Brasil Serviços Online LTDA',
+                    position: 'Desenvolvedor Full Stack Pleno',
+                    description: [
+                        'Atuando com manutenção e desenvolvimento de novas features em diversos sistemas da empresa, utilizando React, NextJs, GoLang, NodeJs, MongoDb, WordPress e Github',
+                        'Metodologia Agil (Scrum) realizando dailys, reuniões de refinamento, review da sprint. Utilizando o Jira como ferramenta de controle e GitFlow'
+                    ],
+                    show: true
+                }, {
                     dateFrom: '19/04/2021',
                     dateTo: '21/09/2023',
                     company: 'F1RST Digital Services (Santander)',
