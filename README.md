@@ -1,19 +1,34 @@
 # 📝 Meu Currículo
 
-Currículo desenvolvido em Angular para aplicar os conhecimentos com algo real e servir como parte de um portifólio
+Currículo desenvolvido em Angular para aplicar os conhecimentos com algo real e servir como parte do meu portifólio
 
-## 🌎 Acesse a versão online
-https://danielvazmartins.com.br/
+Nesta versão os dados estão sendo consumidos através de um arquivo de mock (src/app/shared/mocks/resumes.mock.ts)
 
-## Instalação
+## Instalação local
 ```bash
 # Rodar o projeto localmente
 npm install
 npm start
 
-# Fazer o build para o GitHub Pages
-npm build --base-href /under-construction/
+# Acessar aplicação local
+http://localhost:4200/
 ```
+
+## Deploy
+
+Compilar o projeto para gerar a pasta de distribuição 
+
+```bash
+# Fazer o build para gerar a pasta dist
+npm build
+```
+
+Copiar o conteúdo de dist/my-resume para o repositório danielvazmartins.github.io
+Tomar cuidado para não apagar ou sobescrever os arquivos "CNAME" e "README.md" do repositório de destino
+Fazer commit e push do projeto atualizado
+
+### 🌎 Acesse a versão online
+https://danielvazmartins.com.br/
 
 ## 🛠 Ferramentas utilizadas
 Angular, TypeScript, HTML, SASS
