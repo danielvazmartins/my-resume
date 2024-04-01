@@ -20,10 +20,12 @@ Compilar o projeto para gerar a pasta de distribuição
 
 ```bash
 # Fazer o build para gerar a pasta dist
-npm build
-```
+npm run build
 
-Copiar o conteúdo de dist/my-resume para o repositório danielvazmartins.github.io
+# Copiar o conteúdo de dist/my-resume para o repositório de deploy
+rm ..\danielvazmartins.github.io\*.js
+cp -r -Force .\dist\my-resume\* ..\danielvazmartins.github.io\
+```
 Tomar cuidado para não apagar ou sobescrever os arquivos "CNAME" e "README.md" do repositório de destino
 Fazer commit e push do projeto atualizado
 
