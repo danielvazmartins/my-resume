@@ -36,7 +36,7 @@ export const resumesMock = {
                 skills: ['Inglês Técnico Avançado']
             }
             ],
-            aboutMe: 'Atuo na área de TI desde 2003, formado em Ciências da Computação e pós graduado em Gerenciamento de Projetos, além de ter algumas certificações estou sempre estudando através de plataformas como Alura, SchoolOfNet, Udemy, etc. Durante minha carreira participei de diversos projetos, utilizando tecnologias diferentes, sempre com o foco em desenvolvimento mas atuando também na parte de infra estrutura e DevOps, adquirindo um grande conhecimento de toda área de TI.',
+            aboutMe: 'Atuo na área de TI desde 2003, formado em Ciências da Computação e pós graduado em Gerenciamento de Projetos, além de ter algumas certificações, estou sempre estudando através de plataformas como Alura, SchoolOfNet, Udemy, etc. Durante minha carreira participei de diversos projetos, utilizando tecnologias diferentes, sempre com o foco em desenvolvimento mas atuando também na parte de infra estrutura e DevOps, adquirindo um grande conhecimento de toda área de TI.',
             professionalGoals: 'Atuar na área de desenvolvimento, seja como full-stack, back-end (NodeJs e Java), front-end (Angular), ou até mesmo com desenvolvimentos de Apps Nativos ou DevOps. Sempre me atualizando e pondo em prática os conhecimentos adquiridos. ',
             academicQualifications: [{
                 dateConclusion: '2017',
@@ -223,9 +223,9 @@ export const resumesMock = {
                     company: 'F1RST Digital Services (Santander)',
                     position: 'Analista de Desenvolvimento de Sistemas Sênior',
                     description: [
-                        'Desenvolvimento de sistemas FullStack utilizando NodeJs (Express e NestJs), Java, Angular, MongoDB, ElastichSearch e desenvolvimento de DevOps no Jenkins (Groovy) fazendo intregação com Openshift, Azure e AWS',
+                        'Desenvolvimento de sistemas FullStack utilizando NodeJs (Express e NestJs), Java, Angular, MongoDB, ElastichSearch e desenvolvimento de DevOps no Jenkins (Groovy) fazendo intregração com Openshift, Azure e AWS',
                         'Utilizando boas práticas de projeto, testes unitários (TDD) e seguindo padrão de projeto Agile (Scrum) e Jira',
-                        'Utilização de ferramentas durante o desenvolvimento até o deploy como Git, Jenkins, Docker, Kubernets, Openshift, Sonar, Fortify, etc'
+                        'Utilização de ferramentas desde o desenvolvimento até o deploy com o Git, Jenkins, Docker, Kubernetes, Openshift, Sonar, Fortify, etc'
                     ],
                     show: true
                 }, {
@@ -236,7 +236,7 @@ export const resumesMock = {
                     description: [
                         'Desenvolvimento de sistemas FullStack utilizando NodeJs (Express e NestJs), Angular, MongoDB e ElastichSearch.',
                         'Utilizando boas práticas de projeto, testes unitários (TDD) e seguindo padrão de projeto Agile (Scrum) e Jira',
-                        'Utilização de ferramentas durante o desenvolvimento até o deploy como Git, Jenkins, Docker, Kubernets, Openshift, Sonar, Fortify, etc'
+                        'Utilização de ferramentas desde o desenvolvimento até o deploy com o Git, Jenkins, Docker, Kubernetes, Openshift, Sonar, Fortify, etc'
                     ],
                     show: true
                 }, {
@@ -247,7 +247,7 @@ export const resumesMock = {
                     description: [
                         '<b>Até 2018 -</b> Desenvolvimento de novos projetos em NodeJs com Angular6, manutenção dos projetos existentes em Java ou Nativos. Gerenciamento dos servidores na Amazon AWS',
                         '<b>Até 2013 -</b> Desenvolvimento de aplicativos para Android (Java), Iphone (Objective-C), Web Mobile (HTML, CSS, JQuery). Desenvolvimento do site da empresa (PHP, XHTML). Plataformas de comércio eletrônico (VTEX e Magento). Aplicativos na AppStore (Onofre, John John Denim, Lelis Blanc, By Tennis), no Google Play (Onofre)',
-                        '<b>Até 2011 -</b> Instalação e gerenciamento de infraestrutura para provedor (Hosting de Exchange 2007 e 2010, Zimbra, Postfix, BES, Web com Plesk, Sharepoint, DNS, VMWare, etc). Desenvolvimento de painel de controle do provedor (PHP), webservices de integração (C#), MTA para gerenciamento de e-mail e anti-span (JAVA)'
+                        '<b>Até 2011 -</b> Instalação e gerenciamento de infraestrutura para provedor (Hosting de Exchange 2007 e 2010, Zimbra, Postfix, BES, Web com Plesk, Sharepoint, DNS, VMWare, etc). Desenvolvimento de painel de controle do provedor (PHP), webservices de integração (C#), MTA para gerenciamento de e-mail e antispam (JAVA)'
                     ],
                     show: true
                 }, {
